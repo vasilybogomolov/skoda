@@ -29,14 +29,28 @@
 			<div class="content-wrap">
 				<h1 class="animated fadeInDown">СТАНДАРТЫ ПРОДАЖ ŠKODA</h1>
 				<div>
-					<a href="#" class="btn btn-success js-start-course animated fadeIn">НАЧАТЬ КУРС</a>
+					<a href="#" class="btn btn-success js-start-course animated fadeIn" >НАЧАТЬ КУРС</a>
 				</div>
-				<div class="top-bg__scroll">
-					<a href="#navElement2" class="btn-scroll js-btn-scroll hidden-element" style="display: none"><i class="arrow-down-icon"></i></a>
-				</div>
+
 			</div>
 			<div class="video-bg">
-				<img src="img/background.jpg" alt="bg" class="video-bg__item">
+				<!-- img src="img/background.jpg" alt="bg" class="video-bg__item" -->
+				<video loop="loop" autoplay="autoplay" class="video-bg__item">
+					<source src="video/main.mp4" type="video/mp4" class="header__source">
+				</video>
+			</div>
+			<div class="top-bg__scroll">
+				<a href="#navElement2" class="btn-scroll js-btn-scroll hidden-element" style="display: none" ><i class="arrow-down-icon"></i></a>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class=" hint-scroll">
+					<button type="button" class="close hint-close" data-dismiss="modal" aria-hidden="true">×</button>
+					<span>
+						Нажмите на кнопку <a href="#" class="btn-scroll" ><i class="arrow-down-icon"></i></a>, либо проскрольте вниз
+					</span>
+					<i class="right-arrow"></i>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -117,6 +131,15 @@
 						</div>
 					</div>
 				</div>
+				<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="hint-interactive">
+						<button type="button" class="close hint-close" data-dismiss="modal" aria-hidden="true">×</button>
+					<span>
+						Нажмите на кнопку
+					</span>
+						<i class="right-arrow"></i>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -180,19 +203,13 @@
 				</div>
 			</div>
 			<div class="col-xs-12 setting-block">
-				<a href="#" class="setting-btn"><i class="scale-icon"></i></a>
+				<a href="#" class="setting-btn js-full-screen"><i class="scale-icon"></i></a>
 				<a href="#" class="setting-btn"><i class="sound-icon"></i></a>
 			</div>
 		</div>
 	</div>
 
 	<script src="js/main.js"></script>
-</div>
-<div class="popup" style="display: none">
-	<div class="popup__content">
-
-		Нажмите на кнопку, либо проскрольте вниз
-	</div>
 </div>
 <div class="nav-sidebar">
 	<div class="nav-sidebar__row">
