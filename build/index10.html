@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body class="wide-content-wrap">
+<div class="container-fluid presentation-wrapped">
+    <div class="row js-nav-section " id="navElement1">
+        <div class="table-view">
+            <div class="table-cell-view">
+                <div class="header">
+                    <div class="content-wrap">
+                        <div class="col-xs-6 header__right-text">
+                            SIMPLY CLEVER
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="header__logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-wrap">
+                    <div class="head-description">
+                        <h1 class="animated fadeInDown">Поздравляем!</h1>
+                        Вы получили ценные знания, которые обязательно помогут вам в продажах!
+                    </div>
+                    <div class="text-center">
+                        <a href="#navElement2" class="btn btn-success js-btn-scroll animated fadeIn" >ПОЕХАЛИ!</a>
+                    </div>
+                </div>
+                <div class="video-bg">
+                    <video id="myVideo" data-slide-video="video" class="video-bg__item" loop="" preload="auto" muted="" autoplay="autoplay" src="video/skoda-bg.mp4"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement2">
+        <div class="hide-section">
+            <div class="col-xs-12 interactive-block" id="interactiveBlock">
+                <div class="content-wrap">
+                    <div class="row interactive-block__top">
+                        <div class="col-md-3 col-xs-2 interactive-avatar">
+                            <div class="avatar animated fadeInDown">
+                                <img src="/img/people-circle.png" alt="avatar" class="avatar__image">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-xs-10">
+                            <div class="message-block">
+                                <div class="single-message element-shadow tail">
+                                    Тобой проделана большая работа! Теперь клиент будет приезжать в дилерский центр на обслуживание. Если коллеги из отдела сервиса сработают так же хорошо, как и ты, то клиент вернется к тебе за покупкой нового авто!
+                                </div>
+                                <div class="single-message element-shadow hide-element" >
+                                    Смотри, вот так и вращается наш цикл продаж — мы получили счастливого и лояльного клиента!
+                                </div>
+                                <div class="single-message element-shadow hide-element single-message_img">
+
+                                    <a href="/img/around-banner.png" class="fancybox" rel="gallery" ><img src="/img/around-banner.png" alt="around-banner" class="single-message__image"></a>
+                                </div>
+                                <div class="single-message element-shadow hide-element" >
+                                    Чтобы ничего не было упущено, я подготовил тебе памятку со всей информацией. Скачай ее, распечатай и внимательно изучи — она очень пригодится тебе в работе!
+                                </div>
+                                <div class="btn-wrapper">
+                                    <a href="#" class="btn btn-success btn-small element-shadow js-load-message js-load-text js-block-navbar-menu"><i class="message-icon"></i></a>
+                                    <a href="#" class="btn btn-success btn-normal element-shadow js-load-message js-load-image js-block-navbar-menu" style="display: none"><i class="download-icon"></i> Показать картинку</a>
+                                    <a href="#" class="btn btn-success btn-normal element-shadow js-load-message js-load-content js-block-navbar-menu" style="display: none"><i class="download-icon"></i> Скачать материалы</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement3">
+        <div class="hide-section">
+            <div class="col-xs-12 table-view" >
+                <div class="table-cell-view">
+                    <div class="content-wrap">
+                        <div class="video-player" id="finalVideo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/main.js"></script>
+<script>jwplayer.key="3qlSriDbF/9EoOjsKlICHGe72VFsMHPwCY6Dow==";</script>
+    <script>
+        jwplayer("finalVideo").setup({
+            "file": "../video/Dialog_1.mp4",
+            width: "100%",
+            aspectratio: "16:9", // Set your image ratio here
+        });
+    </script>
+</div>
+<div class="setting-block mobile-none" >
+    <a href="#" class="setting-btn js-full-screen "><i class="scale-icon"></i></a>
+    <a href="#" class="setting-btn"><i class="sound-icon"></i></a>
+</div>
+<div class="nav-sidebar ">
+    <div class="nav-sidebar__row ">
+
+        <a href="#navElement1" class=" element-menu element-menu_current"></a>
+        <a href="#navElement2" class=" element-menu disable"></a>
+        <a href="#navElement3" class=" element-menu disable"></a>
+
+    </div>
+
+</div>
+</body>
+</html>

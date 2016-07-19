@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+<div class="container-fluid presentation-wrapped">
+    <div class="row js-nav-section" id="navElement1">
+        <div class="table-view" >
+            <div class="table-cell-view">
+                <div class="header">
+                    <div class="content-wrap">
+                        <div class="col-xs-6 header__right-text">
+                            SIMPLY CLEVER
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="header__logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-wrap">
+                    <div class="head-description">
+                        <h1 class="animated fadeInDown">Выявление потребностей</h1>
+                        Итак, вы установили контакт с клиентом.
+                        Теперь клиент ждет, что вы узнаете, что именно ему нужно,
+                        и предложите подходящее решение.
+                    </div>
+                    <div class="text-center">
+                        <a href="#navElement2" class="btn btn-success js-btn-scroll animated fadeIn" >ПОЕХАЛИ!</a>
+                    </div>
+
+                </div>
+                <div class="video-bg">
+                    <video id="myVideo" data-slide-video="video" class="video-bg__item" loop="" preload="auto" muted="" autoplay="autoplay" src="video/skoda-bg.mp4"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement2">
+        <div class="hide-section">
+            <div class="col-xs-12 interactive-block" id="interactiveBlock">
+                <div class="content-wrap">
+                    <div class="row interactive-block__top">
+                        <div class="col-md-3 col-xs-2 interactive-avatar">
+                            <div class="avatar animated fadeInDown">
+                                <img src="/img/people-circle.png" alt="avatar" class="avatar__image">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-xs-10">
+                            <div class="message-block">
+                                <div class="single-message element-shadow tail">
+                                    Понять, что нужно клиенту, не так уж и сложно: задавай правильные вопросы и внимательно слушай клиента. Приготовься – сейчас будет немного теории
+                                </div>
+                                <div class="btn-wrapper">
+                                    <a href="#videoContent" class="btn btn-success btn-normal element-shadow js-load-message js-load-content js-block-navbar-menu" ><i class="play-icon"></i> Посмотреть видеоролик</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="hide-element video-content" id="videoContent">
+                            <div class="video-player" id="typeQuestionsVideo"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement3">
+        <div class="hide-section">
+            <div class="col-xs-12 interactive-block">
+                <div class="content-wrap">
+                    <div class="row interactive-block__top">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-2 interactive-avatar">
+                                    <div class="avatar animated fadeInDown">
+                                        <img src="/img/people-circle.png" alt="avatar" class="avatar__image">
+                                    </div>
+                                </div>
+                                <div class="col-md-9 col-xs-10">
+                                    <div class="message-block">
+                                        <div class="single-message element-shadow tail">
+                                            Теперь давай немного потренируемся.
+                                        </div>
+                                        <div class="btn-wrapper">
+                                            <a href="#testBlock" class="btn btn-success btn-normal element-shadow js-load-message js-load-content js-block-navbar-menu" ><i class="learn-icon"></i> Начать мини-тест</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row test-block hide-element " id="testBlock">
+                                <div class="test-block__header">
+                                    Твоя цель — получить как можно больше личной информации о клиенте.
+                                    Какие вопросы ты ему задашь?
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-xs-2 interactive-avatar">
+                                        <div class="avatar  animated fadeInDown">
+                                            <img src="/img/client-avatar.png" alt="avatar" class="avatar__image">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 col-xs-10">
+                                        <div class="message-block">
+                                            <div class="single-message element-shadow tail ">
+                                                Добрый день! Надеюсь на вашу помощь в подборе автомобиля.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="test-block__questions">
+                                    <div class="test-block__single-element" data-number-questions="0">
+                                        <div class="row js-user-answer hide-element">
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail tail_right pull-right">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar avatar_right animated fadeInDown">
+                                                    <img src="/img/manager-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="test-block__answer">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="0">
+                                                        <span class="single-answer__text ">
+                                                            Вы знакомы с маркой Skoda?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="1">
+                                                        <span class="single-answer__text ">
+                                                            Что вы знаете о марке Skoda?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row test-block__annotation hide-element">
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar animated fadeInDown">
+                                                    <img src="/img/client-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail">
+                                                        <div class="annotation-right hide-element">
+                                                            У моего друга ŠKODA Rapid, он про нее рассказывал. Я с ним ездил несколько раз.
+                                                        </div>
+                                                        <div class="annotation-wrong hide-element">
+                                                            Да.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="error-hint hide-element"></div>
+                                    </div>
+                                    <div class="test-block__single-element hide-element" data-number-questions="1">
+                                        <div class="row js-user-answer hide-element">
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail tail_right pull-right">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar avatar_right animated fadeInDown">
+                                                    <img src="/img/manager-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="test-block__answer">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="0">
+                                                        <span class="single-answer__text ">
+                                                            Вы себе ищете автомобиль?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="1">
+                                                        <span class="single-answer__text ">
+                                                            Для кого выбираете автомобиль?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row test-block__annotation hide-element">
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar animated fadeInDown">
+                                                    <img src="/img/client-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail">
+                                                        <div class="annotation-right hide-element">
+                                                            Для себя, еще жена будет ездить и двое детей.
+                                                        </div>
+                                                        <div class="annotation-wrong hide-element">
+                                                            Да.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="error-hint hide-element"></div>
+                                    </div>
+                                    <div class="test-block__single-element hide-element" data-number-questions="2">
+                                        <div class="row js-user-answer hide-element">
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail tail_right pull-right">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar avatar_right animated fadeInDown">
+                                                    <img src="/img/manager-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="test-block__answer">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="0">
+                                                        <span class="single-answer__text ">
+                                                            Вы рассматриваете другие марки?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="1">
+                                                        <span class="single-answer__text ">
+                                                            Какие еще марки автомобилей рассматриваете?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row test-block__annotation hide-element">
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar animated fadeInDown">
+                                                    <img src="/img/client-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail">
+                                                        <div class="annotation-right hide-element">
+                                                            Kia Cerato.
+                                                        </div>
+                                                        <div class="annotation-wrong hide-element">
+                                                            Да.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="error-hint hide-element"></div>
+                                    </div>
+                                    <div class="test-block__single-element hide-element" data-number-questions="3">
+                                        <div class="row js-user-answer hide-element">
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail tail_right pull-right">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar avatar_right animated fadeInDown">
+                                                    <img src="/img/manager-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="test-block__answer">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="1">
+                                                        <span class="single-answer__text ">
+                                                            Какие опции вам нравились в текущем автомобиле?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="0">
+                                                        <span class="single-answer__text ">
+                                                            Вас устраивал текущий автомобиль по опциям?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row test-block__annotation hide-element">
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar animated fadeInDown">
+                                                    <img src="/img/client-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail">
+                                                        <div class="annotation-right hide-element">
+                                                            Климат-контроль, датчик дождя, задний парктроник.
+                                                        </div>
+                                                        <div class="annotation-wrong hide-element">
+                                                            Да.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="error-hint hide-element"></div>
+                                    </div>
+                                    <div class="test-block__single-element hide-element" data-number-questions="4">
+                                        <div class="row js-user-answer hide-element">
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail tail_right pull-right">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar avatar_right animated fadeInDown">
+                                                    <img src="/img/manager-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="test-block__answer">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="1">
+                                                        <span class="single-answer__text ">
+                                                            Почему вы решили поменять автомобиль?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="0">
+                                                        <span class="single-answer__text ">
+                                                            Вы решили поменять автомобиль?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row test-block__annotation hide-element">
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar animated fadeInDown">
+                                                    <img src="/img/client-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail">
+                                                        <div class="annotation-right hide-element">
+                                                            Машина уже старая, ребенку там неудобно: слишком шумная. Да и коляска с трудом влезает.
+                                                        </div>
+                                                        <div class="annotation-wrong hide-element">
+                                                            Да.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="error-hint hide-element"></div>
+                                    </div>
+                                    <div class="test-block__single-element hide-element" data-number-questions="5">
+                                        <div class="row js-user-answer hide-element">
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail tail_right pull-right">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar avatar_right animated fadeInDown">
+                                                    <img src="/img/manager-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="test-block__answer">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="0">
+                                                        <span class="single-answer__text ">
+                                                            Уже наши покупателя на свой автомобиль?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="1">
+                                                        <span class="single-answer__text ">
+                                                            Что планируете делать со своим прошлым автомобилем?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row test-block__annotation hide-element">
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar animated fadeInDown">
+                                                    <img src="/img/client-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail">
+                                                        <div class="annotation-right hide-element">
+                                                            Да еще не решил, а вы можете что-то предложить?
+                                                        </div>
+                                                        <div class="annotation-wrong hide-element">
+                                                            Да.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="error-hint hide-element"></div>
+                                    </div>
+                                    <div class="test-block__single-element hide-element" data-number-questions="6">
+                                        <div class="row js-user-answer hide-element">
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail tail_right pull-right">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar avatar_right animated fadeInDown">
+                                                    <img src="/img/manager-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="test-block__answer">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="0">
+                                                        <span class="single-answer__text ">
+                                                            Вас не интересует кредит?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="1">
+                                                        <span class="single-answer__text ">
+                                                            Как вы планируете финансировать покупку?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row test-block__annotation hide-element">
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar animated fadeInDown">
+                                                    <img src="/img/client-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail">
+                                                        <div class="annotation-right hide-element">
+                                                            Думал большую часть оплатить наличными, а на оставшуюся часть взять кредит.
+                                                        </div>
+                                                        <div class="annotation-wrong hide-element">
+                                                            Да.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="error-hint hide-element"></div>
+                                    </div>
+                                    <div class="test-block__single-element hide-element" data-number-questions="7">
+                                        <div class="row js-user-answer hide-element">
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail tail_right pull-right">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar avatar_right animated fadeInDown">
+                                                    <img src="/img/manager-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="test-block__answer">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="1">
+                                                        <span class="single-answer__text ">
+                                                            Какие требования выдвигаете к своему будущему автомобилю?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="0">
+                                                        <span class="single-answer__text ">
+                                                            Ваш предыдущий автомобиль был на механике. В этом коробку оставим без изменений?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row test-block__annotation hide-element">
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar animated fadeInDown">
+                                                    <img src="/img/client-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail">
+                                                        <div class="annotation-right hide-element">
+                                                            Хочу рассмотреть автомат с двигателем 1,6, чтобы было удобно пользоваться зимой и можно было музыку слушать, подключив телефон.
+                                                        </div>
+                                                        <div class="annotation-wrong hide-element">
+                                                            Да.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="error-hint hide-element"></div>
+                                    </div>
+                                    <div class="test-block__single-element hide-element" data-number-questions="8">
+                                        <div class="row js-user-answer hide-element">
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail tail_right pull-right">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar avatar_right animated fadeInDown">
+                                                    <img src="/img/manager-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="test-block__answer">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="0">
+                                                        <span class="single-answer__text ">
+                                                            Понравились ли модели конкурентов?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="1">
+                                                        <span class="single-answer__text ">
+                                                            Что можете рассказать про марки, которые смотрели?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row test-block__annotation hide-element">
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar animated fadeInDown">
+                                                    <img src="/img/client-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail">
+                                                        <div class="annotation-right hide-element">
+                                                            В Kia Cerato понравились опции, багажник довольно большой.
+                                                        </div>
+                                                        <div class="annotation-wrong hide-element">
+                                                            Да.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="error-hint hide-element"></div>
+                                    </div>
+                                    <div class="test-block__single-element hide-element" data-number-questions="9">
+                                        <div class="row js-user-answer hide-element">
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail tail_right pull-right">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar avatar_right animated fadeInDown">
+                                                    <img src="/img/manager-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="test-block__answer">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="0">
+                                                        <span class="single-answer__text ">
+                                                            Вы подбираете автомобиль для работы?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="single-answer " data-right-answer="1">
+                                                        <span class="single-answer__text ">
+                                                            Для каких целей хотите купить автомобиль?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row test-block__annotation hide-element">
+                                            <div class="col-md-2 col-xs-2 interactive-avatar">
+                                                <div class="avatar animated fadeInDown">
+                                                    <img src="/img/client-avatar.png" alt="avatar" class="avatar__image">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 col-xs-10">
+                                                <div class="message-block">
+                                                    <div class="single-message element-shadow tail">
+                                                        <div class="annotation-right hide-element">
+                                                            Планировал ездить на работу, по выходным на дачу, пару раз в год можно выезжать в отпуск.
+                                                        </div>
+                                                        <div class="annotation-wrong hide-element">
+                                                            Да.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="error-hint hide-element"></div>
+                                    </div>
+                                </div>
+
+                                <div class="text-block__condition js-hint-test">
+                                </div>
+                            </div>
+                            <div class="row interactive-block__top hide-element" id="lastTestMessage">
+                                <div class="col-md-3 col-xs-2 interactive-avatar">
+                                    <div class="avatar animated fadeInDown">
+                                        <img src="/img/people-circle.png" alt="avatar" class="avatar__image">
+                                    </div>
+                                </div>
+                                <div class="col-md-9 col-xs-10">
+                                    <div class="message-block">
+                                        <div class="single-message element-shadow tail">
+                                            Теперь ты знаешь, как задавать клиенту правильные вопросы и получать максимум полезной информации из разговора! Давай покажем клиенту его будущий автомобиль.
+                                        </div>
+                                        <div class="btn-wrapper">
+                                            <a href="#" class="btn btn-success btn-small js-load-message js-load-content element-shadow js-block-navbar-menu" > Готово</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal fade " data-backdrop="static" data-hint-element="hint-test" id="testResult" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="hint_center" data-center="true">
+                        <div class="col-md-3 col-xs-2 interactive-avatar">
+                            <div class="avatar animated fadeInDown">
+                                <img src="/img/people-circle.png" alt="avatar" class="avatar__image">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-xs-10">
+                            <div class="message-block">
+                                <div class="single-message element-shadow tail">
+                                    Твой результат - <span class="count-right-answer">7</span> правильных ответов из <span class="count-all-answer">7</span>. Отлично! Ты получил ответы, которые помогут тебе грамотно презентовать автомобиль.
+                                </div>
+                            </div>
+                            <div class="btn-wrapper">
+                                <a href="#lastTestMessage" class="btn btn-success btn-small js-btn-scroll element-shadow js-block-navbar-menu js-close-modal" > Готово</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" data-backdrop="static" data-hint-element="hint-test" id="testResultFail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="hint_center" data-center="true">
+                        <div class="col-md-3 col-xs-2 interactive-avatar">
+                            <div class="avatar animated fadeInDown">
+                                <img src="/img/people-circle.png" alt="avatar" class="avatar__image">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-xs-10">
+                            <div class="message-block">
+                                <div class="single-message element-shadow tail">
+                                    Твой результат - <span class="count-right-answer">7</span> правильных ответов из <span class="count-all-answer">7</span>. Боюсь, этой информации тебе не хватит для правильного предложения клиенту. Давай попробуем еще раз?
+                                </div>
+                            </div>
+                            <div class="btn-wrapper">
+                                <a href="#" class="btn btn-success btn-normal element-shadow js-repeat-test" ><i class="learn-icon"></i> Начать заново</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement4">
+        <div class="hide-section">
+            <div class="col-xs-12 table-view" >
+                <div class="table-cell-view">
+                    <div class="content-wrap">
+                        <div class="promise js-flag-check">
+                            <div class="under-header">Наше обещание клиентам:</div>
+                            <h2>Мы обеспечиваем нашим клиентам <br>
+                                тёплый приём</h2>
+                            <div class="check-image">
+                                <input type="checkbox" id="promise">
+                                <label for="promise" class="checkbox-success">Обещаю</label>
+                            </div>
+                            <a href="/index4.html" class="btn btn-success btn-disable btn-next-slide js-relation-checkbox">Перейти к <br>
+                                презентации авто</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script>jwplayer.key="3qlSriDbF/9EoOjsKlICHGe72VFsMHPwCY6Dow==";</script>
+    <script>
+        jwplayer("typeQuestionsVideo").setup({
+            "file": "/video/Questions.mov",
+            width: "100%",
+            aspectratio: "16:9", // Set your image ratio here
+        });
+    </script>
+</div>
+<div class="setting-block mobile-none" >
+    <a href="#" class="setting-btn js-full-screen "><i class="scale-icon"></i></a>
+    <a href="#" class="setting-btn"><i class="sound-icon"></i></a>
+</div>
+<div class="nav-sidebar">
+    <div class="nav-sidebar__row ">
+
+        <a href="#navElement1" class=" element-menu element-menu_current"></a>
+        <a href="#navElement2" class=" element-menu disable"></a>
+        <a href="#navElement3" class=" element-menu disable"></a>
+        <a href="#navElement4" class=" element-menu disable"></a>
+
+
+    </div>
+
+</div>
+</body>
+</html>

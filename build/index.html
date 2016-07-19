@@ -11,45 +11,46 @@
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
 </head>
-<body id="js-not-scroll" class="test">
+<body id="js-not-scroll" class="start-course">
 <div class="container-fluid presentation-wrapped">
 	<div class="row js-nav-section" id="navElement1">
-		<div class="top-bg">
-			<div class="header">
-				<div class="content-wrap">
-					<div class="col-xs-6 header__right-text">
-						SIMPLY CLEVER
-					</div>
-					<div class="col-xs-6">
-						<div class="header__logo">
+		<div class="table-view" >
+			<div class="table-cell-view">
+				<div class="header">
+					<div class="content-wrap">
+						<div class="col-xs-6 header__right-text">
+							SIMPLY CLEVER
+						</div>
+						<div class="col-xs-6">
+							<div class="header__logo">
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="content-wrap">
-				<h1 class="animated fadeInDown">СТАНДАРТЫ ПРОДАЖ ŠKODA</h1>
-				<div>
-					<a href="#" class="btn btn-success js-start-course animated fadeIn" >НАЧАТЬ КУРС</a>
-				</div>
+				<div class="content-wrap">
+					<div class="head-description">
+						<h1 class="animated fadeInDown">СТАНДАРТЫ ПРОДАЖ ŠKODA</h1>
+					</div>
+					<div class="text-center">
+						<a href="#" class="btn btn-success js-start-course animated fadeIn" >НАЧАТЬ КУРС</a>
+					</div>
 
-			</div>
-			<div class="video-bg">
-				<!-- img src="img/background.jpg" alt="bg" class="video-bg__item" -->
-				<video loop="loop" autoplay="autoplay" class="video-bg__item">
-					<source src="video/main.mp4" type="video/mp4" class="header__source">
-				</video>
-			</div>
-			<div class="top-bg__scroll">
-				<a href="#navElement2" class="btn-scroll js-btn-scroll hidden-element" style="display: none" ><i class="arrow-down-icon"></i></a>
-			</div>
-			<!-- Modal -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class=" hint-scroll">
-					<button type="button" class="close hint-close" data-dismiss="modal" aria-hidden="true">×</button>
+				</div>
+				<div class="video-bg">
+					<video id="myVideo" data-slide-video="video" class="video-bg__item" loop="" preload="auto" muted="" autoplay="autoplay" src="video/skoda-bg.mp4"></video>
+				</div>
+				<div class="top-bg__scroll">
+					<a href="#navElement2" class="btn-scroll js-btn-scroll hidden-element js-hint-scroll" style="display: none" ><i class="arrow-down-icon"></i></a>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" data-hint-element="hint-scroll" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="hint hint-scroll">
 					<span>
-						Нажмите на кнопку <a href="#" class="btn-scroll" ><i class="arrow-down-icon"></i></a>, либо проскрольте вниз
+						Листайте страницу вниз, <br>
+						чтобы перейти к просмотру
 					</span>
-					<i class="right-arrow"></i>
+						<i class="right-arrow"></i>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -75,7 +76,7 @@
 		</div>
 
 	</div>
-	<div class="row js-nav-section " id="navElement3">
+	<div class="row js-nav-section js-nav-section_double" id="navElement3">
 		<div class="hide-section">
 			<div class="col-xs-12 table-view course-info">
 				<div class="table-cell-view">
@@ -87,23 +88,23 @@
 						<div class="course-info__discription">
 							Вашим учителем по этому курсу будет Алекс. Он знает абсолютно все о продажах и расскажет вам об основных точках взаимодействия с клиентом.
 						</div>
-						<a href="#interactiveBlock" class="btn btn-success btn-big element-shadow js-btn-scroll" ><i class="message-icon"></i>У вас 1 сообщение от Алекса</a>
+						<a href="#navElement4" class="btn btn-success btn-big element-shadow js-btn-scroll" ><i class="message-icon"></i>У вас 1 сообщение от Алекса</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="row js-nav-section " id="navElement4">
+	<div class="row js-nav-section" id="navElement4">
 		<div class="hide-section">
 			<div class="col-xs-12 interactive-block" id="interactiveBlock">
 				<div class="content-wrap">
 					<div class="row interactive-block__top">
-						<div class="col-md-3 col-xs-3">
+						<div class="col-md-3 col-xs-2 interactive-avatar">
 							<div class="avatar animated fadeInDown">
 								<img src="/img/people-circle.png" alt="avatar" class="avatar__image">
 							</div>
 						</div>
-						<div class="col-md-9 col-xs-9">
+						<div class="col-md-9 col-xs-10">
 							<div class="message-block">
 								<div class="single-message element-shadow tail">
 									Привет! Я Алекс. Рад знакомству!
@@ -115,7 +116,8 @@
 									Для начала давай посмотрим на цикл формирования лояльности клиентов. Еще мы называем это улиткой. Лови картинку.
 								</div>
 								<div class="single-message element-shadow hide-element single-message_img">
-									<img src="/img/around-banner.png" alt="around-banner" class="single-message__image">
+
+									<a href="/img/around-banner.png" class="fancybox" rel="gallery" ><img src="/img/around-banner.png" alt="around-banner" class="single-message__image"></a>
 								</div>
 								<div class="single-message element-shadow hide-element" >
 									Помни, что все сотрудники дилерского центра — это команда. От усилий каждого зависит результат. Именно ты отвечаешь за второй этап — этап продажи. Давай изучим его в деталях.
@@ -124,18 +126,19 @@
 									На этом этапе есть 8 точек взаимодействия с клиентом.
 								</div>
 								<div class="btn-wrapper">
-									<a href="#" class="btn btn-success btn-small element-shadow js-load-message js-load-mess "><i class="message-icon"></i></a>
-									<a href="#" class="btn btn-success btn-normal element-shadow js-load-message js-load-image" style="display: none"><i class="download-icon"></i> Загрузить</a>
+									<a href="#" class="btn btn-success btn-small element-shadow js-load-message js-load-text js-hint-interactive js-block-navbar-menu"><i class="message-icon"></i></a>
+									<a href="#" class="btn btn-success btn-normal element-shadow js-load-message js-load-image js-block-navbar-menu" style="display: none"><i class="download-icon"></i> Показать картинку</a>
+									<a href="#" class="btn btn-success btn-normal element-shadow js-load-message js-load-content js-block-navbar-menu" style="display: none"><i class="download-icon"></i> Подробнее</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="hint-interactive">
-						<button type="button" class="close hint-close" data-dismiss="modal" aria-hidden="true">×</button>
+				<div class="modal fade" data-hint-element="hint-interactive" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="hint hint-interactive">
 					<span>
-						Нажмите на кнопку
+						Для получения сообщений от Алекса <br>
+						нажимайте на кнопку
 					</span>
 						<i class="right-arrow"></i>
 					</div>
@@ -152,39 +155,40 @@
 							<div class="col-md-12">
 								<h2 class="interactive-header mrg-t-0">8 точек взаимодействия с клиентом</h2>
 								<div class="row flag-row">
-									<div class="green-flag ">
-										<span class="green-flag__text">Установление контакта</span>
+									<div class="green-flag table-view">
+										<span class="green-flag__text table-cell-view">Установление контакта</span>
 									</div>
-									<div class="green-flag green-flag_tap">
-										<span class="green-flag__text">Выявление потребностей</span>
+									<div class="green-flag green-flag_tap table-view">
+										<span class="green-flag__text table-cell-view">Выявление потребностей</span>
 									</div>
-									<div class="green-flag green-flag_disable">
-										<span class="green-flag__text">Презентация автомобиля</span>
+									<div class="green-flag green-flag_disable table-view">
+										<span class="green-flag__text table-cell-view">Презентация автомобиля</span>
 									</div>
-									<div class="green-flag green-flag_disable">
-										<span class="green-flag__text">Тест-драйв</span>
+									<div class="green-flag green-flag_disable table-view">
+										<span class="green-flag__text table-cell-view">Тест-драйв</span>
 									</div>
-									<div class="green-flag green-flag_disable">
-										<span class="green-flag__text">Переговоры и заключение сделки</span>
+									<div class="green-flag green-flag_disable table-view">
+										<span class="green-flag__text table-cell-view">Переговоры и заключение сделки</span>
 									</div>
-									<div class="green-flag  green-flag_disable">
-										<span class="green-flag__text">Переговоры и заключение сделки</span>
+									<div class="green-flag  green-flag_disable table-view">
+										<span class="green-flag__text table-cell-view">Переговоры и заключение сделки</span>
 									</div>
-									<div class="green-flag green-flag_disable ">
-										<span class="green-flag__text">Переговоры и заключение сделки</span>
+									<div class="green-flag green-flag_disable table-view">
+										<span class="green-flag__text table-cell-view">Переговоры и заключение сделки</span>
 									</div>
-									<div class="green-flag green-flag_disable green-flag_last">
-										<span class="green-flag__text">Переговоры и заключение сделки</span>
+									<div class="green-flag green-flag_disable green-flag_last table-view">
+										<span class="green-flag__text table-cell-view">Переговоры и заключение сделки</span>
 									</div>
 								</div>
-								<div class="row">
-									<div class="last-message hide-element">
+								<div class="row last-message hide-element">
+									<div class="col-md-3 col-xs-2">
 										<div class="bottom-person">
-											<img src="/img/people-funny.png" alt="people funny">
+											<img src="/img/people-funny.png" alt="people funny" class="bottom-person__image">
 										</div>
+									</div>
+									<div class="col-md-9 col-xs-10">
 										<div class="single-message element-shadow tail">
-											Теперь подробнее рассмотрим каждую из точек. Готов? <br>
-											Тогда жми на кнопку!
+											Теперь подробнее рассмотрим каждую из точек. Готов? Тогда жми на кнопку!
 										</div>
 									</div>
 								</div>
@@ -199,34 +203,43 @@
 		<div class="hide-section">
 			<div class="col-xs-12 install-block">
 				<div class="content-wrap">
-					<a href="#" class="btn btn-success btn-small element-shadow">ПЕРЕЙТИ К <br> УСТАНОВЛЕНИЮ КОНТАКТА</a>
+					<a href="/index2.html" class="btn btn-success btn-next-slide element-shadow">ПЕРЕЙТИ К <br class="mobile-none"> УСТАНОВЛЕНИЮ КОНТАКТА</a>
 				</div>
 			</div>
-			<div class="col-xs-12 setting-block">
-				<a href="#" class="setting-btn js-full-screen"><i class="scale-icon"></i></a>
-				<a href="#" class="setting-btn"><i class="sound-icon"></i></a>
-			</div>
+
 		</div>
 	</div>
 
 	<script src="js/main.js"></script>
+	<script>jwplayer.key="3qlSriDbF/9EoOjsKlICHGe72VFsMHPwCY6Dow==";</script>
+</div>
+<div class="setting-block mobile-none" >
+	<a href="#" class="setting-btn js-full-screen "><i class="scale-icon"></i></a>
+	<a href="#" class="setting-btn"><i class="sound-icon"></i></a>
 </div>
 <div class="nav-sidebar">
-	<div class="nav-sidebar__row">
+	<div class="nav-sidebar__row ">
 
 		<a href="#navElement1" class=" element-menu element-menu_current"></a>
 
 		<a href="#navElement2" class=" element-menu disable"></a>
 
-		<a href="#navElement3" class=" element-menu disable"></a>
+		<a href="#navElement3" class=" element-menu disable js-hint-nav-sidebar"></a>
 
 		<a href="#navElement4" class=" element-menu disable"></a>
 
 		<a href="#navElement5" class=" element-menu disable"></a>
 
+	</div>
 
-		</ul>
-
+</div>
+<div class="modal fade" data-hint-element="hint-nav-sidebar" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="hint hint-nav-sidebar">
+					<span>
+						Для получения информации можете  <br>
+						использовать также боковое меню
+					</span>
+		<i class="right-arrow"></i>
 	</div>
 </div>
 </body>

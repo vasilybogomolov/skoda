@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+<div class="container-fluid presentation-wrapped">
+    <div class="row js-nav-section " id="navElement1">
+        <div class="table-view">
+            <div class="table-cell-view">
+                <div class="header">
+                    <div class="content-wrap">
+                        <div class="col-xs-6 header__right-text">
+                            SIMPLY CLEVER
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="header__logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-wrap">
+                    <div class="head-description">
+                        <h1 class="animated fadeInDown">ПРЕЗЕНТАЦИЯ АВТОМОБИЛЯ</h1>
+                        Презентация авто – это шаг, на котором клиент хочет посмотреть автомобиль,
+                        понять, как он устроен внутри, и узнать о его преимуществах.
+                        Конечно, клиенту нужен компетентный менеджер,
+                        который знает автомобиль и может ответить на все вопросы.
+                    </div>
+                    <div class="text-center">
+                        <a href="#navElement2" class="btn btn-success js-btn-scroll animated fadeIn" >ПОЕХАЛИ!</a>
+                    </div>
+                </div>
+                <div class="video-bg">
+                    <video id="myVideo" data-slide-video="video" class="video-bg__item" loop="" preload="auto" muted="" autoplay="autoplay" src="video/skoda-bg.mp4"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement2">
+        <div class="hide-section">
+            <div class="col-xs-12 interactive-block">
+                <div class="content-wrap">
+                    <div class="row interactive-block__top">
+                        <div class="col-md-3 col-xs-2 interactive-avatar">
+                            <div class="avatar animated fadeInDown">
+                                <img src="/img/people-circle.png" alt="avatar" class="avatar__image">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-xs-10">
+                            <div class="message-block">
+                                <div class="single-message element-shadow tail">
+                                    Всю информацию, которую удалось получить при разговоре с клиентом на этапе выявления потребностей, смело используй, чтобы сделать презентацию индивидуальной.
+                                </div>
+                                <div class="single-message element-shadow hide-element" >
+                                    Но в первую очередь, тебе нужно хорошо знать автомобиль и уметь о нем рассказать.
+                                </div>
+                                <div class="single-message element-shadow hide-element">
+                                    Смотри, есть 5 основных точек для презентации авто.
+                                </div>
+                                <div class="single-message element-shadow hide-element single-message_img">
+
+                                    <a href="/img/scheme-auto.jpg" class="fancybox" rel="gallery" ><img src="/img/scheme-auto.jpg" alt="around-banner" class="single-message__image"></a>
+                                </div>
+                                <div class="single-message element-shadow hide-element">
+                                    Такой способ дает возможность рассказать и показать все преимущества авто. Теперь рассмотрим их подробнее.
+                                </div>
+                                <div class="btn-wrapper">
+                                    <a href="#" class="btn btn-success btn-small element-shadow js-load-message js-load-text js-hint-interactive js-block-navbar-menu"><i class="message-icon"></i></a>
+                                    <a href="#" class="btn btn-success btn-normal element-shadow js-load-message js-load-image js-block-navbar-menu" style="display: none"><i class="view-icon"></i> Показать схему</a>
+                                    <a href="#" class="btn btn-success btn-normal element-shadow js-load-message js-load-content js-block-navbar-menu" style="display: none"><i class="play-icon"></i> Посмотреть видеоролик</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement3">
+        <div class="hide-section">
+            <div class="col-xs-12 table-view" >
+                <div class="table-cell-view">
+                    <div class="content-wrap">
+                            <div class="video-interactive">
+                                <div class="video-player" id="presentCarVideo"></div>
+
+                                <div class="video-interactive__content hide-element">
+                                    <div class="video-step hide-element" id="videoStep1">
+                                        <div class="table-view table-view_inset">
+                                            <div class="table-cell-view">
+                                                <div class="row interactive-block__top">
+                                                    <div class="col-md-3 col-xs-2 interactive-avatar">
+                                                        <div class="avatar animated fadeInDown">
+                                                            <img src="/img/people-circle.png" alt="avatar" class="avatar__image">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9 col-xs-10">
+                                                        <div class="message-block">
+                                                            <div class="single-message element-shadow tail">
+                                                                На этой точке открывается отличный вид на авто, не правда ли? Пора рассказать клиенту о его преимуществах.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row flag-row">
+                                                    <div class="green-flag table-view">
+                                                        <span class="green-flag__text table-cell-view">Дорожный просвет</span>
+                                                    </div>
+                                                    <div class="green-flag green-flag_tap table-view">
+                                                        <span class="green-flag__text table-cell-view">Комфортный салон</span>
+                                                    </div>
+                                                    <div class="green-flag green-flag_disable table-view">
+                                                        <span class="green-flag__text table-cell-view">Общая гарантия</span>
+                                                    </div>
+                                                    <div class="green-flag green-flag_disable table-view">
+                                                        <span class="green-flag__text table-cell-view">Общая гарантия</span>
+                                                    </div>
+                                                    <div class="green-flag green-flag_disable table-view">
+                                                        <span class="green-flag__text table-cell-view">Общая гарантия</span>
+                                                    </div>
+                                                    <div class="green-flag  green-flag_disable table-view">
+                                                        <span class="green-flag__text table-cell-view">Общая гарантия</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement4">
+        <div class="hide-section">
+            <div class="col-xs-12 interactive-block" >
+                <div class="content-wrap">
+                    <div class="row interactive-block__top">
+                        <div class="col-md-3 col-xs-2 interactive-avatar">
+                            <div class="avatar animated fadeInDown">
+                                <img src="/img/people-circle.png" alt="avatar" class="avatar__image">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-xs-10">
+                            <div class="message-block">
+                                <div class="single-message element-shadow tail">
+                                    Ну как, все понятно? Теперь твоя очередь провести презентацию автомобиля для клиента. Переходи от точки к точке и не забывай рассказывать о преимуществах. Тогда клиент точно не устоит перед соблазном попробовать автомобиль в динамике. Удачи!
+                                </div>
+                                <div class="btn-wrapper">
+                                    <a href="#navElement5" class="btn btn-success js-btn-scroll element-shadow js-block-navbar-menu"> Продолжить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement5">
+        <div class="hide-section">
+            <div class="col-xs-12 table-view pos-static" >
+                <div class="table-cell-view">
+                    <div class="content-wrap pos-static">
+                        <h4>Перемести преимущества в поля, соответствующие каждой точке.</h4>
+                        <div class="drop-block">
+                            <div class="row drop-block__top">
+                                <div class="col-md-3 pos-static">
+                                    <div class="btn-container pull-right">
+                                        <div class="btn-container__header">
+                                            1. Около автомобиля
+                                        </div>
+                                        <ul id="sortable1" class="btn-container__cell btn-container__cell-vertical sortable" data-group-tags="contain1">
+                                        </ul>
+                                    </div>
+                                    <div class="btn-container pull-right">
+                                        <div class="btn-container__header">
+                                            5. Слева от автомобиля
+                                        </div>
+                                        <ul id="sortable2" class="btn-container__cell btn-container__cell-vertical sortable" data-group-tags="contain2">
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pos-static">
+                                    <div class="scheme-auto ">
+                                        <img src="img/scheme-auto.jpg" alt="" class="scheme-auto__img">
+                                    </div>
+                                    <div class="btn-container">
+                                        <div class="btn-container__header">
+                                            4. Сзади автомобиля
+                                        </div>
+                                        <ul id="sortable3" class="btn-container__cell btn-container__cell-horizontal sortable" data-group-tags="contain3">
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 pos-static">
+                                    <div class="btn-container pull-right">
+                                        <div class="btn-container__header">
+                                            2. Спереди от автомобиля
+                                        </div>
+                                        <ul id="sortable4" class="btn-container__cell btn-container__cell-vertical sortable" data-group-tags="contain4">
+                                        </ul>
+                                    </div>
+                                    <div class="btn-container pull-right">
+                                        <div class="btn-container__header">
+                                            3. Справа от автомобиля
+                                        </div>
+                                        <ul id="sortable5" class="btn-container__cell btn-container__cell-vertical sortable" data-group-tags="contain5">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row drop-block__bottom js-block-navbar-menu">
+                                <ul>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain1">Тех. обслуживание</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain1">Качество</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain1">Умные детали</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain1">Панель приборов</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain2">Багажник</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain2">Отделка салона</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain2">Оптика</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain2">Гарантия на кузов</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain3">Общая гарантия</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain3">Двигатель</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain3">Безопасность</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain3">Опции салона</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain4">Дизайн</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain4">Комфортный салон</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain4">Гарантия мобильности</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain5">Запасное колесо</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain5">Эргономика</li>
+                                    <li class="js-drop-tags btn btn-success drop-btn" data-group-tags="contain5">Дорожный просвет</li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row js-nav-section" id="navElement6">
+        <div class="hide-section">
+            <div class="col-xs-12 interactive-block" >
+                <div class="content-wrap">
+                    <div class="row interactive-block__top">
+                        <div class="col-md-3 col-xs-2 interactive-avatar">
+                            <div class="avatar animated fadeInDown">
+                                <img src="/img/people-circle.png" alt="avatar" class="avatar__image">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-xs-10">
+                            <div class="message-block">
+                                <div class="single-message element-shadow tail">
+                                    Супер! Твоя презентация прошла просто великолепно, клиент несомненно готов к тест-драйву! Но прежде, чем мы перейдем к следующему этапу, я хочу поделиться с тобой еще парой важных правил презентации.
+                                </div>
+                                <div class="btn-wrapper">
+                                    <a href="#navElement7" class="btn btn-success js-btn-scroll element-shadow js-block-navbar-menu"> Продолжить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement7">
+        <div class="hide-section">
+            <div class="col-xs-12 table-view" >
+                <div class="table-cell-view">
+                    <div class="content-wrap">
+                        <div class="rules">
+                            <div class="col-md-8">
+                                <h3><span class="rules__number">1</span> Презентация всегда проходит в шоу-руме </h3>
+                                <div class="rules__text">
+                                    Хостес уже направила клиента в твой отдел, но ты всегда можешь уточнить, чего именно он хотел бы. Ориентируйся по ситуации – иногда предложение консультации может быть неуместно, но чаще клиент все-таки рассчитывает на твою помощь.
+                                </div>
+                                <div class="rules__btn">
+                                    <a href="#navElement8" class="btn btn-success js-btn-scroll element-shadow js-block-navbar-menu">Запомнил</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="rules__image animated fadeInDown">
+                                    <img src="img/presentation-auto1.png" alt="" class="image-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement8">
+        <div class="hide-section">
+            <div class="col-xs-12 table-view" >
+                <div class="table-cell-view">
+                    <div class="content-wrap">
+                        <div class="rules">
+                            <div class="col-md-4">
+                                <div class="rules__image animated fadeInDown">
+                                    <img src="img/presentation-auto2.png" alt="" class="image-center">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h3><span class="rules__number">2</span> Автомобиль должен быть подготовлен</h3>
+                                <div class="rules__text">
+                                    Клиенту нужно иметь время, чтобы осмотреться без лишнего давления. Но надолго оставшись без внимания, он может почувствовать растерянность. ПО данным исследователей, 68% посетителей покидают дилерские центры из-за равнодушия менеджеров и 80% покупок срывается, если клиента беспокоили в первые 15 секунд.
+
+                                </div>
+                                <ul class="rules__list ">
+                                    <li>
+                                        <span class="list-style">></span>Не нужно давить на клиента, но важно установить контакт в течение 30 секунд.
+                                    </li>
+                                </ul>
+                                <div class="rules__btn">
+                                    <a href="#navElement9" class="btn btn-success js-btn-scroll element-shadow js-block-navbar-menu">Запомнил</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement9">
+        <div class="hide-section">
+            <div class="col-xs-12 table-view" >
+                <div class="table-cell-view">
+                    <div class="content-wrap">
+                        <div class="rules">
+                            <div class="col-md-8">
+                                <h3><span class="rules__number">3</span> Помни про концепцию Simply Clever</h3>
+                                <div class="rules__text">
+                                    Начиная беседу с клиентом, важно не забывать об учтивом приветствии, так же, как и об улыбке. Твое дружелюбие продемонстрирует личную заинтересованность и внимание. Кстати, убедись, что хостес предложила клиенту чай или кофе, или предложи напитки самостоятельно, если посчитаешь нужным.
+
+                                </div>
+                                <ul class="rules__list ">
+                                    <li>
+                                        <span class="list-style">></span>Дружелюбное приветствие создает располагающую атмосферу.
+
+                                    </li>
+                                </ul>
+                                <div class="rules__btn">
+                                    <a href="#navElement10" class="btn btn-success js-btn-scroll element-shadow js-block-navbar-menu">Запомнил</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="rules__image animated fadeInDown">
+                                    <img src="img/presentation-auto3.png" alt="" class="image-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement10">
+        <div class="hide-section">
+            <div class="col-xs-12 table-view" >
+                <div class="table-cell-view">
+                    <div class="content-wrap">
+                        <div class="rules">
+                            <div class="col-md-4">
+                                <div class="rules__image animated fadeInDown">
+                                    <img src="img/presentation-auto4.png" alt="" class="image-center">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h3><span class="rules__number">4</span> Предлагай фирменные аксессуары</h3>
+                                <div class="rules__text">
+                                    Здесь все ясно, ведь так? Любое общение начинается со знакомства. Представься клиенту первым и не забудь назвать свою должность – это исключит возможные неловкие ситуации.
+                                </div>
+                                <ul class="rules__list ">
+                                    <li>
+                                        <span class="list-style">></span>Не забудь назвать должность, представляясь клиенту.
+
+                                    </li>
+                                </ul>
+                                <div class="rules__btn">
+                                    <a href="#navElement11" class="btn btn-success js-btn-scroll element-shadow js-block-navbar-menu">Запомнил</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement11">
+        <div class="hide-section">
+            <div class="col-xs-12 table-view" >
+                <div class="table-cell-view">
+                    <div class="content-wrap">
+                        <div class="rules">
+                            <div class="col-md-8">
+                                <h3><span class="rules__number">5</span> По желанию клиента
+                                    можешь проходить точки в другом порядке</h3>
+                                <div class="rules__text">
+                                    Очень важно помочь клиенту почувствовать себя комфортно уже на этапе знакомства. Обращаясь к клиенту по имени, ты вызовешь у него положительные эмоции и доверие к себе – то, что нужно для начала хороших отношений.
+                                </div>
+                                <ul class="rules__list ">
+                                    <li>
+                                        <span class="list-style">></span>Обращение по имени вызывает положительные эмоции
+
+                                    </li>
+                                </ul>
+                                <div class="rules__btn">
+                                    <a href="#navElement12" class="btn btn-success js-btn-scroll element-shadow js-block-navbar-menu">Запомнил</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="rules__image animated fadeInDown">
+                                    <img src="img/presentation-auto5.png" alt="" class="image-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row js-nav-section" id="navElement12">
+        <div class="hide-section">
+            <div class="col-xs-12 table-view" >
+                <div class="table-cell-view">
+                    <div class="content-wrap">
+                        <div class="promise js-flag-check">
+                            <div class="under-header">Наше обещание клиентам:</div>
+                            <h2>Мы обеспечиваем нашим клиентам <br>
+                                тёплый приём</h2>
+                            <div class="check-image">
+                                <input type="checkbox" id="promise">
+                                <label for="promise" class="checkbox-success">Обещаю</label>
+                            </div>
+                            <a href="/index5.html" class="btn btn-success btn-disable btn-next-slide js-relation-checkbox">Перейти к <br>
+                                выявлению потребностей</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script>jwplayer.key="3qlSriDbF/9EoOjsKlICHGe72VFsMHPwCY6Dow==";</script>
+    <script>
+        jwplayer("presentCarVideo").setup({
+            "file": "../video/presentСar.mp4",
+            width: "100%",
+            aspectratio: "16:9", // Set your image ratio here
+        });
+        /* video interactive 4 presentation*/
+
+        jwplayer('presentCarVideo').onTime(function(event) {
+
+            if(parseInt(event.position,10)===2){
+
+                if(!jwplayer()["pauseOnce"]){
+                    jwplayer()["pauseOnce"]=true;
+                    jwplayer().pause();
+                    $('.video-interactive__content').show();
+                    $('#videoStep1').show();
+                } else{
+                    jwplayer()["pauseOnce"]=false;
+                }
+
+            }
+        });
+    </script>
+</div>
+<div class="setting-block mobile-none" >
+    <a href="#" class="setting-btn js-full-screen "><i class="scale-icon"></i></a>
+    <a href="#" class="setting-btn"><i class="sound-icon"></i></a>
+</div>
+<div class="nav-sidebar">
+    <div class="nav-sidebar__row ">
+
+        <a href="#navElement1" class=" element-menu element-menu_current"></a>
+        <a href="#navElement2" class=" element-menu disable"></a>
+        <a href="#navElement3" class=" element-menu disable"></a>
+        <a href="#navElement4" class=" element-menu disable"></a>
+        <a href="#navElement5" class=" element-menu disable"></a>
+        <a href="#navElement6" class=" element-menu disable"></a>
+        <a href="#navElement7" class=" element-menu disable"></a>
+        <a href="#navElement8" class=" element-menu disable"></a>
+        <a href="#navElement9" class=" element-menu disable"></a>
+        <a href="#navElement10" class=" element-menu disable"></a>
+        <a href="#navElement11" class=" element-menu disable"></a>
+        <a href="#navElement12" class=" element-menu disable"></a>
+
+
+    </div>
+
+</div>
+</body>
+</html>
